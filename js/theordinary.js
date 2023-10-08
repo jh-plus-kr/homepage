@@ -5,6 +5,4 @@ $(function () {
         arrows: true,
         pauseOnHover: false,
     });
-
-
-})
+});
