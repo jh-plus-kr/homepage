@@ -1,10 +1,15 @@
+* {
+    /* outline: 1px solid tomato; */
+}
+
 /* ----- HEADER ----- */
 
 header {
     position: absolute;
     inset: 0 auto auto 0;
     width: 100%;
-    /* border-bottom: 1px solid #e0ded8; */
+    /* background-color: hsla(0, 0%, 0%, 0.40); */
+    background-color: hsla(0, 0%, 100%, 0.45);
     z-index: 999;
 }
 
@@ -14,9 +19,10 @@ header .container {
     width: 1200px;
     line-height: 100px;
     margin: 0 auto;
-    padding: 0 20px;
-    font-size: 15px;
+    padding: 15px 20px;
+    font-size: 18px;
     font-weight: 500;
+    /* color: #fff; */
 }
 
 header .container h1>a>img {
@@ -26,6 +32,7 @@ header .container h1>a>img {
 header .container .menuLeft ul {
     display: flex;
     gap: 100px;
+    
 }
 
 header .container .menuRight ul {
@@ -51,22 +58,23 @@ main .container .mainVisual .leftInfo {
     top: 200px;
     left: 100px;
     z-index: 999;
-    width: 455px;
-    background: #fff;
-    padding: 50px 50px;
+    /* background: #fff; */
+    background-color: hsla(0, 0%, 0%, 0.55);
+    border-radius: 25px;
+    padding: 50px 60px;
+    color: #fff;
 }
 
 main .container .mainVisual .leftInfo h2 {
-    font-size: 31px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 main .container .mainVisual .leftInfo p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.5;
-    /* margin-bottom: 40px; */
+    line-height: 33px;
 }
 
 main .container .mainVisual .leftInfo a {
@@ -75,7 +83,7 @@ main .container .mainVisual .leftInfo a {
     font-size: 15px;
     font-weight: 500;
     background: #fff;
-    border: 1px solid #b0aea8;
+    border: 1px solid #ffdd76;
     border-radius: 25px;
     padding: 10px 35px;
 }
@@ -90,8 +98,9 @@ main .container .mainVisual .rightInfo {
     bottom: 0;
     right: 100px;
     z-index: 999;
-    background: #fde04c;
+    background: #fdb34c;
     padding: 25px 60px 25px 40px;
+    border-radius: 20px 20px 0 0;
 }
 
 main .container .mainVisual .rightInfo p {
@@ -142,7 +151,7 @@ main .productSlider .container h2 {
     font-size: 40px;
     font-weight: 500;
     /* padding: 25px 15px; */
-    padding: 25px 60px;
+    padding: 25px 0 25px 10px;
     border-bottom: 1px solid #e0ded8;
 }
 
@@ -177,21 +186,6 @@ main .productSlider .container .newSlider .slick-dots {
     transform: translateX(-50%);
 }
 
-main .productSlider .container .newSlider .slick-dots li {
-    display: inline-block;
-    width: 187.5px;
-    height: 1px;
-    background: #e0ded8;
-    margin: 0 auto;
-    transition: 0.3s;
-}
-
-main .productSlider .container .newSlider .slick-dots li.slick-active {
-    height: 4px;
-    background: #333;
-    transition: 0.3s;
-}
-
 main .productSlider .container .newSlider .slick-dots li button {
     display: none;
 }
@@ -199,45 +193,12 @@ main .productSlider .container .newSlider .slick-dots li button {
 main .productSlider .container .newSlider .productBox {
     display: flex;
     gap: 20px;
-    padding: 50px 10px;
+    padding: 0 10px;
+    height: 350px;
 }
 
 main .productSlider .container .newSlider .productBox img {
-    width: 250px;
-}
-
-main .productSlider .container .newSlider .productBox .box {
-    padding: 35px 0;
-}
-
-main .productSlider .container .newSlider .productBox .box p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    height: 50%;
-}
-
-main .productSlider .container .newSlider .productBox .box a {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-main .productSlider .container .newSlider .productBox .box a::after {
-    content: "\e90b";
-    font-family: xeicon;
-    font-size: 17px;
-    color: rgba(51, 51, 51, 0.5);
-    margin-left: 30px;
-    transition: 0.6s;
-}
-
-main .productSlider .container .newSlider .productBox .box a:hover::after {
-    content: "\e90b";
-    font-family: xeicon;
-    font-size: 17px;
-    color: rgba(51, 51, 51, 0.5);
-    margin-left: 40px;
-    transition: 0.6s;
+    width: 100%;
 }
 
 /* ----- NEWPRODUCTS ----- */
